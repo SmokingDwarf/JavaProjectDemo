@@ -1,4 +1,4 @@
-package week1.practicum2;
+package week1.practicum2A;
 
 public class Zwembad
 {
