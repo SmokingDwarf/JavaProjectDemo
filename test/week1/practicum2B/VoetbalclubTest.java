@@ -3,8 +3,6 @@ package week1.practicum2B;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.sql.SQLOutput;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 
@@ -54,6 +52,7 @@ class VoetbalclubTest
         assertEquals("NEC 1 1 0 0 3", test4.toString(), "verwerkResultaatTestWinstToString");
     }
 
+    @Test
     void verwerkResultaatTestMeerdereWinstPunten(){
         System.out.println("verwerkResultaatTestMeerdereWinst init");
         test4.verwerkResultaat('w');
