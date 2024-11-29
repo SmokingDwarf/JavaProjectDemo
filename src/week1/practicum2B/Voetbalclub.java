@@ -10,6 +10,18 @@ public class Voetbalclub
     public Voetbalclub(String nieuweNaam)
     {
         naam = nieuweNaam;
+        if(naam == null || naam.isEmpty())
+        {
+            this.naam = "FC";
+        }
+    }
+
+    public String getNaam(){
+        return this.naam;
+    }
+
+    public void setNaam(String naam){
+        this.naam = naam;
     }
 
     public void verwerkResultaat(char ch) {
