@@ -16,14 +16,6 @@ public class Voetbalclub
         }
     }
 
-    public String getNaam(){
-        return this.naam;
-    }
-
-    public void setNaam(String naam){
-        this.naam = naam;
-    }
-
     public void verwerkResultaat(char ch) {
         if (ch == 'w')
             aantalGewonnen = aantalGewonnen + 1;
@@ -57,6 +49,29 @@ public class Voetbalclub
     public int getAantalVerloren()
     {
         return aantalVerloren;
+    }
+
+    public String getNaam(){
+        return this.naam;
+    }
+
+    public void setAantalGewonnen(int nieuwAantalGewonnen)
+    {
+        this.aantalGewonnen = nieuwAantalGewonnen;
+    }
+
+    public void setAantalGelijk(int nieuwAantalGelijk)
+    {
+        this.aantalGelijk = nieuwAantalGelijk;
+    }
+
+    public void setAantalVerloren(int nieuwAantalVerloren)
+    {
+        this.aantalVerloren = nieuwAantalVerloren;
+    }
+
+    public void setNaam(String nieuweNaam){
+        this.naam = nieuweNaam;
     }
 
     public String toString()
