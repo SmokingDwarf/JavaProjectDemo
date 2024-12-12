@@ -6,30 +6,14 @@ public class Huis
     private int bouwjaar;
     private Persoon huisbaas;
 
-    public Huis (String nieuwAdres, int nieuwBouwjaar)
+    public Huis (String adr, int bwjr)
     {
-        this.adres = nieuwAdres;
-        this.bouwjaar = nieuwBouwjaar;
+        this.adres = adr;
+        this.bouwjaar = bwjr;
     }
 
-    public void setAdres(String nieuwAdres){
-        this.adres = nieuwAdres;
-    }
-
-    public void setBouwjaar(int nieuwBouwjaar){
-        this.bouwjaar = nieuwBouwjaar;
-    }
-
-    public void setHuisbaas(Persoon nieuwPersoon){
-        this.huisbaas = nieuwPersoon;
-    }
-
-    public String getAdres(){
-        return this.adres;
-    }
-
-    public int getBouwjaar(){
-        return this.bouwjaar;
+    public void setHuisbaas(Persoon hb){
+        this.huisbaas = hb;
     }
 
     public Persoon getHuisbaas()
