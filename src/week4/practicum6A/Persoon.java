@@ -61,6 +61,29 @@ public class Persoon {
         }
     }
 
+    public Game zoekGameOpNaam(String gameNaam){
+        Game game = null;
+        for (Game element : this.gameCollectie) {
+            if (element.getNaam().equals(gameNaam)) {
+                game = element;
+                break;
+            }
+        }
+        return game;
+    }
+
+    public ArrayList<Game> bepaalGamesNietInBezit (ArrayList<Game> gamesArray){
+        ArrayList<Game> nogNietInBezit = new ArrayList<>();
+        for (Game element1 : gamesArray) {
+            for (Game element2 : this.gameCollectie) {
+                if (!element1.equals(element2)){
+                    nogNietInBezit.add(element1);
+                }
+            }
+        }
+        return nogNietInBezit;
+    }
+
     public String toString(){
         BigDecimal bd = new BigDecimal(this.budget);
         bd = bd.setScale(2, RoundingMode.HALF_UP);
