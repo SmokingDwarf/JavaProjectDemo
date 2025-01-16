@@ -34,8 +34,6 @@ public abstract class Voertuig implements Goed {
     }
 
     public String toString(){
-        BigDecimal bd = BigDecimal.valueOf(huidigeWaarde());
-        bd = bd.setScale(2, RoundingMode.HALF_UP);
-        return "Voertuig: " + this.type + " met bouwjaar " + this.bouwjaar + " heeft een waarde van: € " + bd;
+        return "Voertuig: " + this.type + " met bouwjaar " + this.bouwjaar + " heeft een waarde van: € " + Utils.euroBedrag(huidigeWaarde());
     }
 }

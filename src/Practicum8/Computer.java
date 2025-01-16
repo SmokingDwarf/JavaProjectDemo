@@ -47,8 +47,6 @@ public class Computer implements Goed{
     }
 
     public String toString() {
-        BigDecimal bd = BigDecimal.valueOf(huidigeWaarde());
-        bd = bd.setScale(2, RoundingMode.HALF_UP);
-        return "Computer: " + this.type + " met productiejaar " + this.productieJaar + " heeft een waarde van: € " + bd;
+        return "Computer: " + this.type + " met productiejaar " + this.productieJaar + " heeft een waarde van: € " + Utils.euroBedrag(huidigeWaarde());
     }
 }
