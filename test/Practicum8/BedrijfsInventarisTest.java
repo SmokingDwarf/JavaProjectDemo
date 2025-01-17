@@ -18,7 +18,7 @@ class BedrijfsInventarisTest {
     void EenOfTweeFietsenInInventarisTest(){
         testBedrijf.schafAan(fiets1);
         testBedrijf.schafAan(fiets2);
-        assertEquals("Voertuig: Goeiekoop met bouwjaar 2024 heeft een waarde van: € 40.50\n", testBedrijf.toString(), "EenOfTweeFietsenInInventarisTest()");
+        assertEquals("Voertuig: Goeiekoop met bouwjaar 2024 heeft een waarde van: € 40,50\n", testBedrijf.toString(), "EenOfTweeFietsenInInventarisTest()");
     }
 
     // Testgeval 2 - Het aanschaffen mislukt als er onvoldoende budget is.

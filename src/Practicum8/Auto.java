@@ -24,9 +24,6 @@ public class Auto extends Voertuig {
     public boolean equals (Object obj){
         if (!(obj instanceof Auto auto))
             return false;
-
-        return (this.kenteken.equals(auto.kenteken)
-                && this.nieuwprijs == auto.nieuwprijs
-                && this.bouwjaar == auto.bouwjaar);
+        return (this.kenteken.equals(auto.kenteken));
     }
 }

@@ -24,8 +24,6 @@ public class Fiets extends Voertuig{
         if (!(obj instanceof Fiets fiets))
             return false;
 
-        return (this.framenummer == fiets.framenummer
-                && this.nieuwprijs == fiets.nieuwprijs
-                && this.bouwjaar == fiets.bouwjaar);
+        return (this.framenummer == fiets.framenummer);
     }
 }
