@@ -5,10 +5,7 @@ import java.math.RoundingMode;
 
 public class Utils {
     public static String euroBedrag(double bedrag) {
-        BigDecimal bigDecimal = new BigDecimal(bedrag);
-        bigDecimal = bigDecimal.setScale(2, RoundingMode.HALF_UP);
-        String s = "€ " + bigDecimal;
-        return s.replace('.', ',');
+        return euroBedrag(bedrag, 2);
     }
 
     public static String euroBedrag(double bedrag, int precisie) {
